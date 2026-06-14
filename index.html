@@ -1,0 +1,56 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="hero">
+
+	<div class="hero-overlay">
+
+		<h1>
+			Discover Authentic Nigerian Cuisine
+		</h1>
+
+		<p>
+			Experience the vibrant flavors of Nigeria
+			through recipes, stories and culture.
+		</p>
+
+		<a href="/recipes" class="btn">
+			Explore Recipes
+		</a>
+
+	</div>
+
+</header>
+
+<section class="featured">
+
+	<h2>Featured Dishes</h2>
+
+	<div class="grid">
+
+		{% for recipe in recipes %}
+
+		<div class="card">
+
+			<img src="{{ url_for('static',
+			filename='images/' + recipe.image) }}">
+
+			<div class="card-content">
+
+				<h3>{{ recipe.name }}</h3>
+
+				<p>{{ recipe.description }}</p>
+
+			</div>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+</section>
+
+{% endblock %}

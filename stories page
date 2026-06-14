@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="story">
+
+<h1>Nigerian Food Culture</h1>
+
+<p>
+
+Nigerian cuisine reflects centuries of
+tradition, culture and community.
+
+From the smoky aroma of Lagos party
+jollof rice to the spicy delight of
+Northern suya, every dish tells a story.
+
+</p>
+
+</section>
+
+{% endblock %}

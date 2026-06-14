@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="recipes-page">
+
+<h1>Traditional Nigerian Recipes</h1>
+
+<div class="grid">
+
+{% for recipe in recipes %}
+
+<div class="card">
+
+<img src="{{ url_for('static',
+filename='images/' + recipe.image) }}">
+
+<h3>{{ recipe.name }}</h3>
+
+<p>{{ recipe.description }}</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+{% endblock %}

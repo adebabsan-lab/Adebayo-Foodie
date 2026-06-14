@@ -1,0 +1,8 @@
+<div class="gallery-filters">
+    <button>All</button>
+    <button>Rice</button>
+    <button>Street Food</button>
+    <button>Suya</button>
+    <button>Plantain</button>
+    <button>Seafood</button>
+</div>
